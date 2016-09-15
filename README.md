@@ -11,24 +11,26 @@ Daniel Dobalian ([dadobali@microsoft.com](mailto:dadobali@microsoft.com))
 ## Steps to Run
 
 1. Register your app.
-  1. Click "Add Platform" and select web. 
-  2. Set the redirect uri to http://localhost:8000/redirect.html.
+    * Click "Add Platform" and select web. 
+    * Set the redirect uri to http://localhost:8000/redirect.html.
   
 2. In your terminal:
 
-'''
-$ mkdir your_app
-$ npm install -g bower
-$ bower install hello
-'''
+  ```
+  $ mkdir your_app
+  $ npm install -g bower
+  $ bower install hello
+  ```
 
 
 3. Clone this repo into the directory you just created.
 
+
 4. Inside index.html, set your applications id. 
+
 
 5. Run the web app for port 8000, and navigate to http://localhost:8000. For example, 
 
-'''
-python -m SimpleHTTPServer 8000"
-'''
+  ```
+  python -m SimpleHTTPServer 8000"
+  ```
