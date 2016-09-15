@@ -32,5 +32,5 @@ Daniel Dobalian ([dadobali@microsoft.com](mailto:dadobali@microsoft.com))
 5. Run the web app for port 8000, and navigate to http://localhost:8000. For example, 
 
   ```
-  python -m SimpleHTTPServer 8000"
+  python -m SimpleHTTPServer 8000
   ```
