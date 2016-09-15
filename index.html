@@ -1,0 +1,44 @@
+<html>
+<title>hello( aad )</title>
+<h1>AAD Test with Hello.js</h1>
+
+<script src="./bower_components/hello/dist/hello.all.js" class="pre"></script>
+<script src="aad.js" class="pre"></script>
+
+
+<p>Login to aad using request_type = token</p>
+
+<button onclick="login('aad');">Login AAD</button>
+
+<pre class="response"></pre>
+
+<script class="pre">
+function login(network){
+	// By defining response type to code, the OAuth flow that will return a refresh token to be used to refresh the access token
+	// However this will require the oauth_proxy server
+	hello(network).login({display: 'popup'}, log).then(function() {
+	alert('You are signed in to AAD');
+}, function(e) {
+	alert('Signin error: ' + e.error.message);
+});
+}
+</script>
+
+
+<script class="pre">
+hello.init({
+	aad : `YOUR_APP_ID`
+},{
+	redirect_uri: '../redirect.html',
+	scope: 'mail.read'
+});
+</script>
+
+<script>
+function log(s){
+	document.body.querySelector('.response').appendChild(document.createTextNode(JSON.stringify(s, true, 2)));
+}
+</script>
+
+
+</html>
