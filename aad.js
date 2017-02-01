@@ -34,6 +34,12 @@
 
 			},
 
+			base: 'https://www.graph.microsoft.com/v1.0/',
+
+			get: {
+				me: 'me'
+			},
+
 			xhr: function(p) {
 
 				if (p.method === 'post' || p.method === 'put') {
