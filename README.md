@@ -1,7 +1,7 @@
 ---
 services: active-directory
-platforms: Javascript
-author: dadobali
+platforms: javascript
+author: danieldobalian
 ---
 
 # Sign in Azure AD + MSA Users using Javascript Open Source Library
