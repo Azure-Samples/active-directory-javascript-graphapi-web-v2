@@ -24,7 +24,7 @@ This sample demonstrates how to use Azure AD with a 3rd party Javascript library
   
 2. Clone the code.
   ```
-  git clone https://github.com/danieldobalian/v2jsapp.git
+  git clone https://github.com/Azure-Samples/active-directory-javascript-graphapi-web-v2.git
   ```
 
 3. Register your Azure AD v2.0 app. 
