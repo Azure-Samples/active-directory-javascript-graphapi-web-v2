@@ -21,18 +21,21 @@ This sample demonstrates how to use Azure AD with a 3rd party Javascript library
   npm install -g bower
   bower install hello
   ```
-
-2. Register your Azure AD v2.0 app. 
-    - Navigate to the [App Registration Portal](https://identity.microsoft.com). 
-    - Go to the the `My Apps` page, click `Add an App`, and name your app.  
-    - Set a platform by clicking `Add Platform`, select `Web`, and add a Redirect URI of ```http://localhost:8000/redirect.html```.
-
-3. Clone the code.
+  
+2. Clone the code.
   ```
   git clone https://github.com/danieldobalian/v2jsapp.git
   ```
 
-4. Inside index.html, set your application/client id from the App Registration Portal. 
+3. Register your Azure AD v2.0 app. 
+  - Go to the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/portal/register-app) to register an application
+  - Enter a name for your application and your email
+  - Make sure the option for Guided Setup is unchecked
+  - Click `Add Platform`, then select `Web`
+  - Add a Redirect URI of `http://localhost:8000/redirect.html`
+  - Click Save 
+
+4. Inside index.html, replace *``Register your app at apps.dev.microsoft.com``* with the **Application Id** from the application registered in the Microsoft Application Registration Portal
 
 5. Run the web app for port 8000, and navigate to http://localhost:8000. If you have Python installed you can run the following command, 
 
