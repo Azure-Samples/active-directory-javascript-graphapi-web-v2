@@ -51,6 +51,6 @@ This sample was tested with hello.js v1.13.5, Google Chrome version 55.0, and ma
 
 ## Acknowledgements
 
-This sample was adapted from the hello.js templates.  Thanks to [Brandon Werner](https://github.com/xerners) for doing the initial testing and preparing much of the code. 
+This sample was adapted from the hello.js templates.  Thanks to [Brandon Werner](https://github.com/brandwe) for doing the initial testing and preparing much of the code. 
 
 [hello.js](https://github.com/MrSwitch/hello.js)
