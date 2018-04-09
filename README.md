@@ -4,7 +4,7 @@ platforms: javascript
 author: navyasric
 ---
 
-# Sign in Azure AD + MSA Users using Javascript Open Source Library
+# Sign in Azure AD + MSA Users using 3rd Party JavaScript OAuth Library(Hello.js)
 | [Getting Started](https://apps.dev.microsoft.com/portal/register-app)| [Library](https://github.com/MrSwitch/hello.js) | [Docs](https://aka.ms/aadv2) | [Support](README.md#community-help-and-support)
 | --- | --- | --- | --- |
 > [!NOTE]
