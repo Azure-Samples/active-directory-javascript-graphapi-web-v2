@@ -7,7 +7,7 @@ author: navyasric
 # Sign in Azure AD + MSA Users using 3rd Party JavaScript OAuth Library (Hello.js)
 | [Getting Started](https://apps.dev.microsoft.com/portal/register-app)| [Library](https://github.com/MrSwitch/hello.js) | [Docs](https://aka.ms/aadv2) | [Support](README.md#community-help-and-support)
 | --- | --- | --- | --- |
-> **NOTE:** This sample is using a 3rd party library that has been tested for compatibility in basic scenarios with the v2.0 endpoint.     Microsoft does not provide fixes for these libraries and has not done a review of these libraries.  Issues and feature requests should   be directed to the library's open-source project. Please see this [document](https://docs.microsoft.com/en-us/azure/active- directory/develop/active-directory-v2-libraries) for more information.   
+> **NOTE:** This sample is using a 3rd party library that has been tested for compatibility in basic scenarios with the v2.0 endpoint.   Microsoft does not provide fixes for these libraries and has not done a review of these libraries.  Issues and feature requests should   be directed to the library's open-source project.  Please see this [document](https://docs.microsoft.com/en-us/azure/active- directory/develop/active-directory-v2-libraries) for more information.   
 > 
 >
 
