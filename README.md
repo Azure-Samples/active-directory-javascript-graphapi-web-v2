@@ -8,15 +8,15 @@ author: navyasric
 | [Getting Started](https://apps.dev.microsoft.com/portal/register-app)| [Library](https://github.com/MrSwitch/hello.js) | [Docs](https://aka.ms/aadv2) | [Support](README.md#community-help-and-support)
 | --- | --- | --- | --- |
 > [!NOTE]
-> This sample is using a 3rd party library that has been tested for compatibility in basic scenarios with the v2.0 endpoint.  Microsoft does not provide fixes for these libraries and has not done a review of these libraries.  Issues and feature requests should be directed to the library's open-source project.  Please see this [document](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries) for more information.   
+> This sample is using a 3rd party library that has been tested for compatibility in basic scenarios with the Microsoft identity platform endpoint.  Microsoft does not provide fixes for these libraries and has not done a review of these libraries.  Issues and feature requests should be directed to the library's open-source project.  Please see this [document](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries) for more information.   
 > 
 >
 
-This sample demonstrates how to use Azure AD with a 3rd party Javascript library ([hello.js](https://github.com/MrSwitch/hello.js)) to  do an OAuth 2.0 flow against the v2.0 endpoint.  Hello.js also provides code for calling web APIs which the sample has preconfigured to support the Microsoft Graph /me endpoint, and provides a structure for making MS Graph calls.  
+This sample demonstrates how to use Azure AD with a 3rd party Javascript library ([hello.js](https://github.com/MrSwitch/hello.js)) to  do an OAuth 2.0 flow against the identity platform endpoint.  Hello.js also provides code for calling web APIs which the sample has preconfigured to support the Microsoft Graph /me endpoint, and provides a structure for making MS Graph calls.  
 
 ## Register the application
 
-Register your app with Azure AD v2.0 as follows:
+Register your app with Microsoft identity platform as follows:
 1. Go to the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/portal/register-app) to register an application
 2. Enter a name for your application
 3. Make sure the option for Guided Setup is unchecked
