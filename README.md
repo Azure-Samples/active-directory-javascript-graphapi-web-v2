@@ -2,6 +2,14 @@
 services: active-directory
 platforms: javascript
 author: navyasric
+page_type: sample
+languages:
+  - javascript  
+products:
+  - azure
+  - azure-active-directory  
+  - office-ms-graph
+description: "A sample that shows how to use Azure AD with a 3rd party Javascript library to do an OAuth 2.0 flow against the identity platform endpoint and call web APIs."
 ---
 
 # Sign in Azure AD + MSA Users using 3rd Party JavaScript OAuth Library (Hello.js)
