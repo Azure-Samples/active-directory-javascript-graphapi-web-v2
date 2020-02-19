@@ -1,0 +1,75 @@
+<html>
+<title>hello.js aad app</title>
+<h1>AAD Test with Hello.js</h1>
+
+<script src="./bower_components/hello/dist/hello.all.js" class="pre"></script>
+<script src="aad.js" class="pre"></script>
+
+
+<p>Login to aad using request_type = token</p>
+
+<button id="auth" onclick="login('aad');">Login AAD</button>
+
+<pre class="response"></pre>
+
+<script class="pre">
+function login(network){
+	// By defining response type to code, the OAuth flow that will return a refresh token to be used to refresh the access token
+	// However this will require the oauth_proxy server
+	hello(network).login({display: 'popup'}, log).then(function() {
+	alert('You are signed in to AAD');
+
+	// Change button to Sign Out 
+	var authButton = document.getElementById('auth');
+	authButton.innerHTML = 'logout';
+	authButton.setAttribute('onclick', 'logout("aad");');
+
+}, function(e) {
+	alert('Signin error: ' + e.error.message);
+});
+}
+
+function logout(network){
+	// Removes all sessions, need to call AAD endpoint to do full logout
+	hello(network).logout({force: true}, log).then(function() {
+	alert('You have Signed Out of  AAD');
+
+	// Change button to Sign in
+	var authButton = document.getElementById('auth');
+	authButton.innerHTML = "Login AAD";
+	authButton.setAttribute('onclick', 'login("aad");');
+
+}, function(e) {
+	alert('Sign out error: ' + e.error.message);
+});
+}
+
+
+// function api(network) {
+// 	// api in hello.js allows you to make API calls w/ the new Bearer Token 
+// 	hello(network).api('me').then(function(data) {
+// 		alert("Data: " + data.toString());
+// 	});
+// }
+</script>
+
+
+<script class="pre">
+
+// TODO: Register your app and put your client/app id below
+hello.init({
+	aad : `Register your app at apps.dev.microsoft.com`
+},{
+	redirect_uri: '../redirect.html',
+	scope: 'User.read'
+});
+</script>
+
+<script>
+function log(s){
+	document.body.querySelector('.response').appendChild(document.createTextNode("\n\n" + JSON.stringify(s, true, 2)));
+}
+</script>
+
+
+</html>
